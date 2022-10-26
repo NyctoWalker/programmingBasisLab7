@@ -10,19 +10,19 @@ private:
 	public:
 		Node* pNext;
 		int data;
-		Node(int data = 0, Node* pNext = nullptr); //Конструктор создания элемента списка
+		Node(int data = 0, Node* pNext = nullptr); //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃРѕР·РґР°РЅРёСЏ СЌР»РµРјРµРЅС‚Р° СЃРїРёСЃРєР°
 		//int NodeData() { return data; }
 	};
 	Node* head;
 	int Size = 0;
 
 public:
-	List(int Size); //Конструктор создания
+	List(int Size); //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃРѕР·РґР°РЅРёСЏ
 	~List();
 	int GetSize() { return Size; }
 
-	void pop_front(); // удаление элемента в начале списка
-	void push_back(int data); // добавление элемента в конец списка
+	void pop_front(); // СѓРґР°Р»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РІ РЅР°С‡Р°Р»Рµ СЃРїРёСЃРєР°
+	void push_back(int data); // РґРѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС† СЃРїРёСЃРєР°
 	void DeleteList();
 	void CreateList(int Size);
 	void PrintList();
