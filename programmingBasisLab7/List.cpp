@@ -4,7 +4,7 @@ List::List(int Size)
 {
 	Size = 0;
 	head = nullptr;
-	cout << "Êîíñòðóêòîð äëÿ " << this << endl;
+	cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð´Ð»Ñ " << this << endl;
 }
 
 List::Node::Node(int data, Node* pNext)
@@ -15,7 +15,7 @@ List::Node::Node(int data, Node* pNext)
 
 List::~List()
 {
-	cout << "Äåñòðóêòîð äëÿ " << this << endl;
+	cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð´Ð»Ñ " << this << endl;
 	DeleteList();
 };
 
@@ -52,13 +52,13 @@ void List::PrintList()
 	{
 		for (int i = 0; i < Size; i++)
 		{
-			cout << "Ýëåìåíò ¹ " << i + 1 << " = " << p->data << endl;
+			cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ â„– " << i + 1 << " = " << p->data << endl;
 			p = p->pNext;
 		}
 	}
 	else
 	{
-		cout << "Ñïèñîê åù¸ íå çàäàí èëè êîëè÷åñòâî åãî ýëåìåíòîâ ðàâíî íóëþ." << endl << endl;
+		cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÐµÑ‰Ñ‘ Ð½Ðµ Ð·Ð°Ð´Ð°Ð½ Ð¸Ð»Ð¸ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐµÐ³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ñ€Ð°Ð²Ð½Ð¾ Ð½ÑƒÐ»ÑŽ." << endl << endl;
 	}
 	delete p;
 }
@@ -84,7 +84,7 @@ void List::DeleteByNum()
 {
 	Node* previous = head;
 	int j;
-	cout << "Ââåäèòå íîìåð ýëåìåíòà äëÿ óäàëåíèÿ: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð´Ð»Ñ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ: " << endl;
 	cin >> j;
 	cout << endl;
 
@@ -110,13 +110,13 @@ void List::DeleteByNum()
 		}
 		else
 		{
-			cout << "Íå÷åãî óäàëÿòü." << endl;
+			cout << "ÐÐµÑ‡ÐµÐ³Ð¾ ÑƒÐ´Ð°Ð»ÑÑ‚ÑŒ." << endl;
 			cout << endl;
 		}
 	}
 	else
 	{
-		cout << "Ââåäåíî íåêîððåêòíîå çíà÷åíèå íîìåðà ýëåìåíòà äëÿ óäàëåíèÿ." << endl;
+		cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð¾ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð½Ð¾Ð¼ÐµÑ€Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° Ð´Ð»Ñ ÑƒÐ´Ð°Ð»ÐµÐ½Ð¸Ñ." << endl;
 		cout << endl;
 	}
 
